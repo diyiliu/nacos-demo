@@ -27,7 +27,7 @@ public class NacosProviderBoot {
 
         @RequestMapping(value = "/echo/{string}")
         public String echo(@PathVariable String string) {
-            return "Hello Nacos Discovery " + string;
+            return "Hello[你好] Nacos Discovery " + string;
         }
 
     }
