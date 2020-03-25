@@ -1,0 +1,10 @@
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.cloud:spring-cloud-starter-alibaba-nacos-discovery'
+
+    testImplementation 'junit:junit'
+}
+
+bootJar {
+    mainClassName = 'com.diyiliu.nacos.provider.Boot'
+}
