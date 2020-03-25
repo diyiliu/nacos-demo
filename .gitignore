@@ -1,0 +1,4 @@
+# Project exclude paths
+/.gradle/
+/nacos-consumer/out/
+/nacos-provider/out/
