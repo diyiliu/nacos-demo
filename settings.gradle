@@ -1,4 +1,5 @@
 rootProject.name = 'nacos-demo'
 include 'nacos-provider'
 include 'nacos-consumer'
+include 'nacos-gateway'
 

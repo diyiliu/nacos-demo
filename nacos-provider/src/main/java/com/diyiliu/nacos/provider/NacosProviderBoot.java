@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * Description: NacosProviderBoot
  * Author: DIYILIU
@@ -26,8 +28,9 @@ public class NacosProviderBoot {
     public class NacosProviderController{
 
         @RequestMapping(value = "/echo/{string}")
-        public String echo(@PathVariable String string) {
-            return "Hello[你好] Nacos Discovery " + string;
+        public String echo(@PathVariable String string, HttpServletRequest request) {
+
+            return "Hello[你好] Nacos Discovery " + string + "; From: " + request.getServerPort();
         }
 
     }
